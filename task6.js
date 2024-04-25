@@ -8,4 +8,8 @@ const checkNumber = (x) => {
     }
 }
 
-console.log(checkNumber(18));
+try {
+    console.log(checkNumber(7)); 
+} catch (err) {
+    console.error(err.message);
+}

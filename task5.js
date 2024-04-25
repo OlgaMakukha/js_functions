@@ -3,11 +3,8 @@ function componentToHex(c) {
     return hex.length === 1 ? "0" + hex : hex;
 }
 
-function rgbToHex(r, g, b) {
-    if (r === undefined || g === undefined || b === undefined) {
-        return rgbToHex(23, 134, 0);
-    }
+function rgbToHex(r = 23, g = 134, b = 0) {
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
-console.log(rgbToHex(12, 152, 200));
+console.log(rgbToHex(12, 130));
